@@ -1,38 +1,74 @@
 .App {
-  text-align: center;
+  margin: 0 auto;
+  max-width: 90%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.DeviceList {
+  list-style: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Device {
+  border: 1px solid rgba(0,0,0,0.5);
+  padding: 1em 2em 2em;
+  display: inline-block;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.5), 4px 2px 8px rgba(0,0,0,0.5);
+  /* background-color: darkorange;
+  color: white; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Device h1 {
+  margin: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.6);
+}
+
+.PhoneLineList {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.PhoneLine {
+  display: inline-block;
+  flex-basis: 150px;
+  border: 1px solid rgba(0,0,0,0.6);
+  padding: 1em 2em 2em;
+  margin: 0.25em;
+  /* background: turquoise;
+  color: black; */
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.5), 2px 1px 4px rgba(0,0,0,0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.PhoneLine h1 {
+  margin: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.6);
+}
+
+.Device .PhoneLine h1,
+.PhoneLine .Device h1 {
+  font-size: 1.5em;
+}
+
+.RegisteredDevices ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.RegisteredDevice {
+  display: block;
+  flex-basis: 100px;
+  border: 1px solid rgba(0,0,0,0.6);
+  padding: 0.5em;
+  margin: 0.25em;
+  /* background: yellow;
+  color: black; */
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.5), 2px 1px 4px rgba(0,0,0,0.5);
+}
+
+.NumbersList {
+  list-style: none;
+  padding: 0;
 }
